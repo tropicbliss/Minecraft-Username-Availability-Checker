@@ -23,4 +23,5 @@ Username3
 python name_checker.py <text_file>
 ```
 Note: For Linux machines, replace `python` with `python3`.
+
 6. Profit!
