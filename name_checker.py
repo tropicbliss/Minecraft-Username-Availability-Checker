@@ -20,7 +20,6 @@ def main():
                     res.raise_for_status()
                 except Exception as exc:
                     print('There was a problem: %s' % (exc))
-                    sys.exit()
                 namemc_soup = bs4.BeautifulSoup(res.text, 'html.parser')
                 available_time = namemc_soup.find("time", {"id": "availability-time"}).attrs["datetime"]
                 available_time = datetime.strptime(available_time, '%Y-%m-%dT%H:%M:%S.000Z')
