@@ -1,5 +1,5 @@
 # Minecraft Username Checker
-This tiny utility is able to check multiple Minecraft usernames to determine whether they were made available recently recently.
+This tiny utility is able to check Minecraft usernames in bulk to determine whether they were made available recently recently.
  
  ## Installation
  1. Install the latest version of Python.
