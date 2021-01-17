@@ -20,6 +20,8 @@ def main():
                     res.raise_for_status()
                 except Exception as exc:
                     print('There was a problem: %s' % (exc))
+                    if exc == "404 Client Error: Not Found":
+                        sys.exit()
                 namemc_soup = bs4.BeautifulSoup(res.text, 'html.parser')
                 available_time = namemc_soup.find("time", {"id": "availability-time"}).attrs["datetime"]
                 available_time = datetime.strptime(available_time, '%Y-%m-%dT%H:%M:%S.000Z')
@@ -27,7 +29,7 @@ def main():
                 print("{} is available at {}, {} later.".format(username, available_time, wait_time))
                 available_names.append(username)
             except AttributeError:
-                print("{} was taken.".format(username))
+                print("{} was taken or unavailable.".format(username))
             finally:
                 username = name_list.readline().strip()
         print()
