@@ -8,17 +8,17 @@ This tiny utility is able to check multiple Minecraft usernames to determine whe
 ```
 py -m pip install -r requirements.txt
 ```
-Note: Linux machines might not work with the above command, instead run this (if it still doesn't work replace `pip` with `pip3`):
+Note: Linux machines might not work with the above command, so instead run this (if it still doesn't work replace `pip` with `pip3`):
 ```
 pip install -r requirements.txt
 ```
-4. You need to create a text file on the same directory with all the names that you want to check in this manner:
+4. You need to create a text file on the same directory with all the usernames that you want to check in this manner:
 ```
 Username1
 Username2
 Username3
 ```
-5. Enter this into your command line, where <text_file> will be the name of the file created in step 4:
+5. Enter this into your command line, where `<text_file>` will be the name of the file created in step 4:
 ```
 python name_checker.py <text_file>
 ```
