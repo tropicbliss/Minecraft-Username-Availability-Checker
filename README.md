@@ -27,4 +27,4 @@ Note: For Linux machines, replace `python` with `python3`.
 6. Profit!
 
 ## To-do:
--Making it run asynchronously.
+- Making it run asynchronously.
