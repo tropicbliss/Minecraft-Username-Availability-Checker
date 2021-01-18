@@ -1,5 +1,9 @@
 # Minecraft Username Availability Checker
 This tiny utility is able to check Minecraft usernames in bulk to determine whether they were made available recently.
+
+## Requirements
+- beautifulsoup4
+- requests
  
  ## Installation
  1. Install the latest version of Python 3.
