@@ -24,13 +24,13 @@ Username3
 ```
 5. Enter this into your command line, where `<text_file>` will be the name of the file created in step 4:
 ```
-python name_checker.py <text_file>
+py name_checker.py <text_file>
 ```
 For example:
 ```
-python name_checker.py usernames.txt
+py name_checker.py usernames.txt
 ```
-Note: For Linux machines, replace `python` with `python3`.
+Note: For Linux machines, replace `py` with `python3`.
 
 6. Profit!
 
