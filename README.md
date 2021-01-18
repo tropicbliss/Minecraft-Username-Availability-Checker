@@ -5,7 +5,7 @@ This tiny utility is able to check Minecraft usernames in bulk to determine whet
 - beautifulsoup4
 - requests
  
- ## Installation
+ ## Installation and Usage
  1. Install the latest version of Python 3.
  2. Download the file [here](https://github.com/etoh53/Minecraft-Name-Checker-Utility/archive/main.zip) and extract the files.
  3. Navigate into the correct folder (MCsniperPY has a good tutorial [here](https://github.com/MCsniperPY/MCsniperPY#installing-dependencies) and enter this into your command line:
