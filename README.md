@@ -35,3 +35,5 @@ Note: For Linux machines, replace `python` with `python3`.
 6. Profit!
 
 Note: After a few requests, requests made to NameMC will get rate limited. Therefore the script waits for 10 minutes before resuming requests. For Linux users running this off a VPS, feel free to use `screen` to run this script in the background.
+
+Final disclaimer: Since this script uses NameMC, some names that show up as available might not be available due to it being blocked by bots, so unfortunately there is nothing you can do about that.
