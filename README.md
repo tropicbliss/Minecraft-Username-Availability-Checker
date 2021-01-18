@@ -26,5 +26,7 @@ Note: For Linux machines, replace `python` with `python3`.
 
 6. Profit!
 
+Note: You can only run requests a certain number of times, or the script will return with "429 Client Error".
+
 ## To-do:
 - Add multithreading support.
