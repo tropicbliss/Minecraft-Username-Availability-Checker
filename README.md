@@ -12,7 +12,7 @@ This tiny utility is able to check Minecraft usernames in bulk to determine whet
 ```
 py -m pip install -r requirements.txt
 ```
-Note: Linux machines might not work with the above command, so instead run this (if it still doesn't work replace `pip` with `pip3`):
+Note: The above command might not work on Linux, so run this instead (if it still doesn't work replace `pip` with `pip3`):
 ```
 pip install -r requirements.txt
 ```
@@ -30,7 +30,7 @@ For example:
 ```
 py name_checker.py usernames.txt
 ```
-Note: For Linux machines, replace `py` with `python3`.
+Note: For Linux, replace `py` with `python3`.
 
 6. Profit!
 
