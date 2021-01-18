@@ -1,5 +1,6 @@
 import sys
 import os
+import time
 from datetime import datetime
 import requests
 import bs4
@@ -14,12 +15,17 @@ def main():
         username = name_list.readline().strip()
         while username:
             try:
+                retry = False
                 now = datetime.utcnow()
                 res = requests.get('https://namemc.com/search?q=' + username)
                 try:
                     res.raise_for_status()
                 except Exception as exc:
                     print("There was a problem: {}".format(exc))
+                    if "429" in str(exc):
+                        print("Request is being refused due to IP being rate limited. Waiting 10 minutes before reattempting...")
+                        retry = True
+                        time.sleep(600)
                     continue
                 namemc_soup = bs4.BeautifulSoup(res.text, 'html.parser')
                 available_time = namemc_soup.find("time", {"id": "availability-time"}).attrs["datetime"]
@@ -30,7 +36,8 @@ def main():
             except AttributeError:
                 print("{} was taken or unavailable.".format(username))
             finally:
-                username = name_list.readline().strip()
+                if retry == False:
+                    username = name_list.readline().strip()
         print()
         print("Available username(s): {}".format(available_names))
 
