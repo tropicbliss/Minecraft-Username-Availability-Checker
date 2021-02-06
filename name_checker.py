@@ -50,7 +50,7 @@ def main():
 
 def is_valid_char(username):
     regex = re.compile(r'[^a-zA-Z0-9_.]')
-    username = charRe.search(username)
+    username = regex.search(username)
     return not bool(username)
 
 if __name__ == '__main__':
