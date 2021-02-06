@@ -28,7 +28,7 @@ py name_checker.py <text_file>
 ```
 For example:
 ```
-py name_checker.py usernames.txt
+py name_checker.py example.txt
 ```
 Note: For Linux, replace `py` with `python3`.
 
