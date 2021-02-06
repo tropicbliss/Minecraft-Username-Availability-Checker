@@ -36,7 +36,7 @@ def main():
                 print("{} is available at {} ({} later).".format(username, available_time, wait_time))
                 available_names.append(username)
             except AttributeError:
-                print("{} is unavailable or has never been used before.".format(username))
+                print("{} is unavailable or have never been used before.".format(username))
             finally:
                 if retry == False:
                     if ((is_valid_char(username) == False) or (len(username) < 3) or (len(username) > 16)):
