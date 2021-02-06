@@ -32,7 +32,7 @@ def main():
                 available_time = namemc_soup.find("time", {"id": "availability-time"}).attrs["datetime"]
                 available_time = datetime.strptime(available_time, '%Y-%m-%dT%H:%M:%S.000Z')
                 wait_time = available_time - now
-                print("{} is available at {}, {} later.".format(username, available_time, wait_time))
+                print("{} is available at {} ({} later).".format(username, available_time, wait_time))
                 available_names.append(username)
             except AttributeError:
                 print("{} was taken or unavailable.".format(username))
