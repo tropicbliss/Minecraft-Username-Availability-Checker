@@ -20,7 +20,7 @@ Feel free to use the older version which still works fine at the time of writing
  
 ## Installation and Usage
 1. Install the latest version of Python 3.
-2. Download the file [here](https://github.com/etoh53/Minecraft-Name-Checker-Utility/archive/main.zip) and extract the files.
+2. Download the file [here](https://github.com/etoh53/Minecraft-Name-Checker-Utility/archive/v2.zip) and extract the files.
 3. Navigate into the correct folder (MCsniperPY has a good tutorial [here](https://github.com/MCsniperPY/MCsniperPY#installing-dependencies) and enter this into your command line:
 ```
 py -m pip install -r requirements.txt
