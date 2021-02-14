@@ -2,13 +2,12 @@
 This tiny utility is able to check Minecraft usernames in bulk to determine whether they were made available recently.
 
 ## Requirements
-- beautifulsoup4
 - requests
  
- ## Installation and Usage
- 1. Install the latest version of Python 3.
- 2. Download the file [here](https://github.com/etoh53/Minecraft-Name-Checker-Utility/archive/main.zip) and extract the files.
- 3. Navigate into the correct folder (MCsniperPY has a good tutorial [here](https://github.com/MCsniperPY/MCsniperPY#installing-dependencies) and enter this into your command line:
+## Installation and Usage
+1. Install the latest version of Python 3.
+2. Download the file [here](https://github.com/etoh53/Minecraft-Name-Checker-Utility/archive/main.zip) and extract the files.
+3. Navigate into the correct folder (MCsniperPY has a good tutorial [here](https://github.com/MCsniperPY/MCsniperPY#installing-dependencies) and enter this into your command line:
 ```
 py -m pip install -r requirements.txt
 ```
@@ -24,11 +23,11 @@ Username3
 ```
 5. Enter this into your command line, where `<text_file>` will be the name of the file created in step 4:
 ```
-py name_checker.py <text_file>
+py check.py <text_file>
 ```
 For example:
 ```
-py name_checker.py example.txt
+py check.py example.txt
 ```
 Note: For Linux, replace `py` with `python3`.
 
@@ -36,4 +35,5 @@ Note: For Linux, replace `py` with `python3`.
 
 Note: After a few requests, requests made to NameMC will get rate limited. Therefore the script waits for 10 minutes before resuming requests. For Linux users running this off a VPS, feel free to use `screen` to run this script in the background.
 
-Final disclaimer: Since this script uses NameMC, some names that show up as available might not be available due to it being blocked by bots, so unfortunately there is nothing you can do about that.
+## Why I can't obtain a username even if it shows up as available?
+The username might be blocked by bots or by Mojang themselves.
