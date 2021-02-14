@@ -20,7 +20,7 @@ def main():
             regex = re.compile(r'[^a-zA-Z0-9_.]')
             result = regex.search(username)
             result = bool(result)
-            if (not (result or (len(username) < 3) or (len(username) > 16))):
+            if not (result or (len(username) < 3) or (len(username) > 16)):
                 retry = False
                 res = requests.get('https://api.mojang.com/users/profiles/minecraft/' + username)
                 if res.status_code == 200:
