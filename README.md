@@ -5,7 +5,7 @@ This tiny utility is able to check Minecraft usernames in bulk to determine whet
 This newer version uses Mojang's API instead of obtaining data through NameMC via web scraping.
 
 ### Advantages:
-- Faster
+- Way faster
 - Less stringent rate limiter
 - 1 dependency to download instead of 2
 
