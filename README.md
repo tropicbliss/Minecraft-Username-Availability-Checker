@@ -15,7 +15,7 @@ This newer version uses Mojang's API instead of obtaining data through NameMC vi
 
 Feel free to use the older version which still works fine at the time of writing.
 
-## Requirements
+## Dependencies
 - requests
  
 ## Installation and Usage
