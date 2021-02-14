@@ -1,6 +1,20 @@
 # Minecraft Username Availability Checker
 This tiny utility is able to check Minecraft usernames in bulk to determine whether they were made available recently.
 
+## New version?
+This newer version uses Mojang's API instead of obtaining data through NameMC via web scraping.
+
+### Advantages:
+- Faster
+- Less stringent rate limiter
+- 1 dependency to download instead of 2
+
+### Disadvantages:
+- Inability to get username availability time.
+- More likely to break if Mojang changes its API
+
+Feel free to use the older version which still works fine at the time of writing.
+
 ## Requirements
 - requests
  
