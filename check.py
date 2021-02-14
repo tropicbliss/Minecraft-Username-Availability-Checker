@@ -38,7 +38,7 @@ def main():
                     try:
                         res.raise_for_status()
                     except Exception as exc:
-                        print("There was a problem: {}".format(exc))
+                        print("There is a problem: {}".format(exc))
                     else:
                         print("Unhandled HTTP status code: {}. Program exiting...".format(res.status_code))
                     finally:
