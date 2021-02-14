@@ -14,12 +14,11 @@ def main():
     invalid_names = []
     with open(filepath) as name_list:
         username = name_list.readline().strip()
+        regex = re.compile(r'[^a-zA-Z0-9_.]')
         retry = False
         start_time = time.time()
         while username:
-            regex = re.compile(r'[^a-zA-Z0-9_.]')
-            result = regex.search(username)
-            result = bool(result)
+            result = bool(regex.search(username))
             if not (result or (len(username) < 3) or (len(username) > 16)):
                 retry = False
                 res = requests.get('https://api.mojang.com/users/profiles/minecraft/' + username)
