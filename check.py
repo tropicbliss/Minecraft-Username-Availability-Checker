@@ -17,7 +17,10 @@ def main():
         retry = False
         start_time = time.time()
         while username:
-            if not is_invalid_username(username):
+            regex = re.compile(r'[^a-zA-Z0-9_.]')
+            result = regex.search(username)
+            result = bool(result)
+            if (not (result or (len(username) < 3) or (len(username) > 16))):
                 retry = False
                 res = requests.get('https://api.mojang.com/users/profiles/minecraft/' + username)
                 if res.status_code == 200:
@@ -51,12 +54,6 @@ def main():
         print("Available username(s): {}".format(available_names))
         if invalid_names:
             print("Invalid username(s): {}".format(invalid_names))
-
-def is_invalid_username(username):
-    regex = re.compile(r'[^a-zA-Z0-9_.]')
-    result = regex.search(username)
-    result = bool(result)
-    return (result or (len(username) < 3) or (len(username) > 16))
 
 if __name__ == '__main__':
     main()
