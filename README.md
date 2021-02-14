@@ -50,7 +50,7 @@ Note: For Linux, replace `py` with `python3`.
 
 6. Profit!
 
-Note: After a few requests, requests made to NameMC will get rate limited. Therefore the script waits for x amount of seconds before resuming requests. For Linux users running this off a VPS, feel free to use `screen` to run this script in the background.
+Note: After a few requests, requests made to NameMC will get rate limited. Therefore the script waits for a while before resuming requests. For Linux users running this off a VPS, feel free to use `screen` to run this script in the background.
 
 ## Why can't I obtain a username even if it shows up as available?
 The username is most likely blocked by bots or Mojang.
