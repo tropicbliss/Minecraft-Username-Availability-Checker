@@ -51,3 +51,6 @@ Note: After a few requests, requests made to NameMC will get rate limited. There
 
 ## Why I can't obtain a username even if it shows up as available?
 The username is most probably blocked by bots or Mojang.
+
+## Async?
+Honestly speaking, I haven't learned `async` yet.
