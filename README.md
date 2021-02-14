@@ -1,7 +1,8 @@
 # Minecraft Username Availability Checker
 This tiny utility is able to check Minecraft usernames in bulk to determine whether they were made available recently.
 
-<img src="https://media.giphy.com/media/WSdNo4sktc8AgQut4x/giphy.gif">
+<img src="https://media.giphy.com/media/WSdNo4sktc8AgQut4x/giphy.gif" width="300">
+Note: Speed depends on your ping to Mojang servers.
 
 ## New version?
 This newer version uses Mojang's API instead of obtaining data through NameMC via web scraping.
