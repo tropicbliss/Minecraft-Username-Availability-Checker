@@ -10,7 +10,7 @@ This newer version uses Mojang's API instead of obtaining data through NameMC vi
 - 1 dependency to download instead of 2
 
 ### Disadvantages:
-- Inability to get username availability time.
+- Inability to get username availability time (possible but I am lazy).
 - More likely to break if Mojang changes its API
 
 Feel free to use the older version which still works fine at the time of writing.
