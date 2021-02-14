@@ -36,4 +36,4 @@ Note: For Linux, replace `py` with `python3`.
 Note: After a few requests, requests made to NameMC will get rate limited. Therefore the script waits for 10 minutes before resuming requests. For Linux users running this off a VPS, feel free to use `screen` to run this script in the background.
 
 ## Why I can't obtain a username even if it shows up as available?
-The username might be blocked by bots or Mojang.
+The username is most probably blocked by bots or Mojang.
