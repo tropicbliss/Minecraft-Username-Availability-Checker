@@ -55,5 +55,5 @@ Note: After a few requests, requests made to NameMC will get rate limited. There
 ## Why can't I obtain a username even if it shows up as available?
 The username is most likely blocked by bots or Mojang.
 
-## Async support?
-`async` support coming soon, which will make this one of the fastest Minecraft username availability checkers ever!
+## Multithreading support?
+Multithreading support coming soon, which will make this one of the fastest Minecraft username availability checkers ever!
