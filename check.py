@@ -41,7 +41,7 @@ def check_username(username):
                 start_time = time.time()
             else:
                 res.raise_for_status()
-                print(f'Unhandled HTTP status code: {res.status_code}. Program exiting...')
+                print(f'Unhandled HTTP status code: {res.status_code}. Exiting...')
                 sys.exit()
         else:
             print(f'{username} is an invalid username.')
@@ -65,7 +65,7 @@ with concurrent.futures.ThreadPoolExecutor() as executor:
     try:
         executor.map(check_username, username_list)
     except Exception as exc:
-        print(f'There is a problem: {exc}')
+        print(f'There is a problem: {exc}. Exiting...')
         sys.exit()
 print()
 print(f'Available username(s): {available_names}')
