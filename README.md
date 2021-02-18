@@ -6,11 +6,11 @@ This version includes multithreading support which drastically improves speed, m
 
 <img src="https://media.giphy.com/media/zw8YsfZfx0rzTsM4Vn/giphy.gif" width="550">
 
-## Credits
+## Credits ♥️
 
-[MCsniperPY](https://github.com/MCsniperPY/MCsniperPY) (for the readme and `install.sh`). ♥️
+[MCsniperPY](https://github.com/MCsniperPY/MCsniperPY) (for the readme and `install.sh`).
 
-## Dependencies
+### Dependencies
 
 - [requests](https://2.python-requests.org/en/latest/)
 
