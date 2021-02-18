@@ -8,7 +8,7 @@ This version includes multithreading support which drastically improves speed, m
 
 ## Credits
 
-[MCsniperPY](https://github.com/MCsniperPY/MCsniperPY) (for the readme and `install.sh`).
+[MCsniperPY](https://github.com/MCsniperPY/MCsniperPY) (for the readme and `install.sh`). ♥️
 
 ## Dependencies
 
