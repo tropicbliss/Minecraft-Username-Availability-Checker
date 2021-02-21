@@ -26,6 +26,7 @@ def check_username(username):
                 print(f'{username} was taken.')
             elif res.status_code == 204:
                 print(f'{username} is available or never used.')
+                # multithreading with GIL so don't need to worry about race conditions, whew!
                 available_names.append(username)
             elif res.status_code == 429:
                 end_time = time.time()
