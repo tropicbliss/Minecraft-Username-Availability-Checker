@@ -26,7 +26,8 @@ def check_username(username):
                 print(f'{username} was taken.')
             elif res.status_code == 204:
                 print(f'{username} is available or never used.')
-                # multithreading with GIL so don't need to worry about race conditions, whew!
+                # from stackoverflow:
+                # concurrent.futures.ThreadPoolExecutor allow only one thread to access the common data structure or location in memory at a time; the threading.Lock() primitive is used to manage this, so race conditions don't occur!
                 available_names.append(username)
             elif res.status_code == 429:
                 end_time = time.time()
