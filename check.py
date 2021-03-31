@@ -56,7 +56,7 @@ if not os.path.isfile(filepath):
 available_names = []
 invalid_names = []
 with open(filepath) as name_list:
-    username_list = (line.rstrip('\n') for line in name_list)
+    username_list = (line.strip() for line in name_list)
     if not username_list:
         print(f'{filepath} is empty. Exiting...')
         sys.exit()
