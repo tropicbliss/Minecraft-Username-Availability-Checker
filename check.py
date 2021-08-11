@@ -32,7 +32,7 @@ def check_username(username):
             elif res.status_code == 429:
                 end_time = time.time()
                 global start_time
-                time_to_wait = math.ceil(600 - (end_time - start_time))
+                time_to_wait = math.ceil(200 - (end_time - start_time))
                 global rate_limited
                 if not rate_limited:
                     rate_limited = True
