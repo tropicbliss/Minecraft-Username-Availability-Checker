@@ -21,7 +21,7 @@ def check_username(username):
         retry = False
         result = bool(regex.search(username))
         if not (result or (len(username) < 3) or (len(username) > 16)):
-            res = requests.get('https://api.mojang.com/users/profiles/minecraft/' + username)
+            res = client.get('https://api.mojang.com/users/profiles/minecraft/' + username)
             if res.status_code == 200:
                 print(f'{username} was taken.')
             elif res.status_code == 204:
@@ -61,6 +61,7 @@ with open(filepath) as name_list:
         print(f'{filepath} is empty. Exiting...')
         sys.exit()
 regex = re.compile(r'[^a-zA-Z0-9_.]')
+client = requests.Session()
 rate_limited = False
 start_time = time.time()
 with concurrent.futures.ThreadPoolExecutor() as executor:
