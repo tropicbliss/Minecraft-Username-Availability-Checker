@@ -1,5 +1,7 @@
 # Minecraft Username Availability Checker
 
+Check out [defenestrator](https://github.com/tropicbliss/defenestrator) for a non rate-limited name availability checker!
+
 This tiny utility is able to check Minecraft usernames in bulk to determine whether they were made available recently.
 
 This version includes multithreading support which drastically improves speed, making this one of the fastest username checkers ever. You'll get rate limited almost immediately, guaranteed!
